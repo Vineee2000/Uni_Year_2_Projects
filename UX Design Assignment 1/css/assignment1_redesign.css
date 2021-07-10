@@ -1,0 +1,140 @@
+/*Sets height and width on html for inheritance purposes*/
+html{
+	height: 100%;
+	width: 100%;
+}
+/*Makes the body take up size of it's contents (which it does when positioned absolutely) and hides the horizontal scrollbar*/
+body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	min-height: 100%;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	position: absolute;
+
+}
+/*Styles the header*/
+.Header {
+	margin: 0;
+	padding: 0;
+	float: right;
+	width: 94vw;
+	height: 17vh;
+	background-color: rgb(0, 157, 185);
+	position: absolute;
+	top: 0;
+	left: 6%;
+}
+/*The div that takes up header's space in flow layout to let other elements flow properly*/
+.HeaderCrutch {
+	width: 100%;
+	height: 17vh;
+}
+/*The div with navigation bar*/
+.NavBar {
+	float: right;
+	width: 20%;
+	height: 82%;
+	margin: 0;
+	padding: 0;
+	position: sticky;
+	top: 0;
+	left: 80%;
+}
+/*The div with actual content*/
+.MainContent {
+	float: left;
+	width: 49vw;
+	min-height: 100%;
+	margin: 0;
+	margin-right: -5px;
+	padding-left: 15vw;
+	padding-right: 15vw;
+	border-right: 5px solid rgb(0, 157, 185);
+	position: relative;
+}
+
+/*Styling for links at the bottom of the page*/
+.contactLink {
+	font-size: x-large;
+	color: blue;
+}
+.contactLink:visited {
+	color: purple;
+}
+
+/*Styling for header text*/
+h1 {
+	text-align: center;
+	margin: 0px;
+	padding-top: 1.5%;
+	vertical-align: middle;
+	font-size: 550%;
+	font-weight: bold;
+	font-style: italic;
+}
+
+/*Styling fot the nav bar contents*/
+nav {
+	margin-top: -3vh;
+}
+nav ul {
+	text-align: left;
+    list-style-type: none;
+	width: 100%;
+	padding: 0px;
+	margin-top: 12%;
+}
+nav ul li {
+	border-bottom: 3px solid rgb(0, 157, 185);
+	font-size: 250%;
+	font-family: sans-serif;
+}
+li a {
+	display: block;
+	text-decoration: none;
+	color:black;
+	padding-bottom: 2vh;
+	padding-top: 2vh;
+	padding-left: 2vh;
+}
+li a:hover {
+	color: rgb(0, 157, 185);
+}
+
+/*Styling for the titles in the content*/
+h2 {
+	float: left;
+	text-align: center;
+	font-size: 300%;
+	font-style: italic;
+	width: 100%;
+	margin-bottom: 2%;
+}
+/*Styling for the rest of the content text*/
+p {
+	font-size: large;
+	padding: 2%;
+	display: block;
+}
+/*styling for the contact nav bar link*/
+#contact {
+	border-bottom: 0px;
+}
+#contactLink {
+	padding-top: 6vh;
+}
+/*Implementation of the picture in the header*/
+#portrait {
+	width: 25vh;
+	height: 25vh;
+	border-radius: 50%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2;
+	background-color: rgb(0, 157, 185);
+	content: url("../images/BetterPortrait.jpg");
+	/*Taken from https://media.licdn.com/dms/image/C4E03AQGpfePY5mc7KA/profile-displayphoto-shrink_200_200/0?e=1579132800&v=beta&t=1STNY74z-r4yg0QOBeFXn9RCFZKCMlfcJ5uhdVJVHSc*/
+}
