@@ -1,0 +1,204 @@
+/*Sets height and width on html for inheritance purposes*/
+html{
+	height: 100%;
+	width: 100%;
+}
+/*Makes the body take up size of it's contents (which it does when positioned absolutely) and hides the horizontal scrollbar*/
+body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	min-height: 100%;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	position: absolute;
+
+}
+/*Styles the header*/
+.Header {
+	margin: 0;
+	padding: 0;
+	float: right;
+	width: 94vw;
+	height: 10vw;
+	background-color: rgb(0, 157, 185);
+	position: absolute;
+	top: 0;
+	left: 6%;
+}
+/*The div that takes up header's space in flow layout to let other elements flow properly*/
+.HeaderCrutch {
+	width: 100vw;
+	height: 10vw;
+}
+/*The div with navigation bar*/
+.NavBar {
+	float: right;
+	width: 20vw;
+	height: calc(100vh - 10vw);
+	margin: 0;
+	margin-left: -0.3vw;
+	padding: 0;
+	border-left: 0.3vw solid rgb(0, 157, 185);
+	position: sticky;
+	top: 0;
+	left: 80%;
+}
+/*The div with actual content*/
+.MainContent {
+	float: left;
+	width: 48vw;
+	min-height: 100%;
+	margin: 0;
+	padding-left: 15vw;
+	padding-right: 15vw;
+	position: relative;
+}
+
+/*Styling for links at the bottom of the page*/
+.contactLink {
+	font-size: x-large;
+	color: blue;
+}
+.contactText {
+	padding-bottom: 2vh;
+	padding-top: 2vh;
+	padding-left: 2vh;
+	font-size: x-large;
+}
+.contactLink:visited {
+	color: purple;
+}
+.month {
+	padding-top: 4vw;
+	padding-bottom: 4vw;
+	width: 51vw;
+	background: rgb(0, 157, 185);
+	text-align: center;
+}
+.month ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+.month ul li {
+	color: white;
+	font-size: 20px;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+}
+.weekdays {
+	margin: 0;
+	padding: 10px 0;
+	background-color:#ddd;
+	width: 51vw;
+}
+.weekdays li {
+	display: inline-block;
+	width: 13.6%;
+	color: #666;
+	text-align: center;
+}
+.days {
+	padding: 1vw 0;
+	background: #eee;
+	margin: 0;
+	width: 51vw;
+}
+.days li {
+	list-style-type: none;
+	display: inline-block;
+	width: 13.6%;
+	text-align: center;
+	margin-bottom: 5px;
+	font-size:1.5vw;
+	color: #777;
+}
+.days li .scheduled{
+	padding: 5px;
+	background: rgb(0, 157, 185);
+	color: white !important
+}
+.textList li {
+	font-size: 1.5vw;
+	padding: 0.8vw;
+}
+
+/*Styling for header text*/
+h1 {
+	text-align: center;
+	margin: 0px;
+	padding-top: 1.5%;
+	vertical-align: middle;
+	font-size: 7vw;
+	font-weight: bold;
+	font-style: italic;
+}
+
+/*Styling fot the nav bar contents*/
+nav {
+	margin-top: -3vh;
+}
+nav ul {
+	text-align: left;
+    list-style-type: none;
+	width: 100%;
+	padding: 0px;
+	margin-top: 12%;
+}
+nav ul li {
+	border-bottom: 3px solid rgb(0, 157, 185);
+	font-size: 2.5em;
+	font-family: sans-serif;
+}
+li a {
+	display: block;
+	text-decoration: none;
+	color:black;
+	padding-bottom: 2vh;
+	padding-top: 2vh;
+	padding-left: 2vh;
+}
+li a:hover {
+	color: rgb(0, 157, 185);
+}
+
+/*Styling for the titles in the content*/
+h2 {
+	float: left;
+	text-align: center;
+	font-size: 300%;
+	font-style: italic;
+	width: 100%;
+	margin-bottom: 2%;
+}
+/*Styling for the rest of the content text*/
+p {
+	font-size: x-large;
+	padding: 2%;
+	display: block;
+}
+/*styling for the contact nav bar link*/
+#contact {
+	border-bottom: 0px;
+}
+/*Implementation of the picture in the header*/
+#portrait {
+	width: 12vw;
+	height: 12vw;
+	border-radius: 50%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2;
+	background-color: rgb(0, 157, 185);
+	content: url("../images/BetterPortrait.jpg");
+	/*Taken from https://media.licdn.com/dms/image/C4E03AQGpfePY5mc7KA/profile-displayphoto-shrink_200_200/0?e=1579132800&v=beta&t=1STNY74z-r4yg0QOBeFXn9RCFZKCMlfcJ5uhdVJVHSc*/
+}
+#caledarDiv ul {
+	list-style-type: none;
+}
+#calendarSpace {
+	width: inherit;
+	height: 7vw;
+}
